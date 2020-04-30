@@ -9,7 +9,7 @@ class Cliente(models.Model):
     telefono=models.CharField(max_length=10)
 
     def __str__(self):
-        return 'El nombre es: %s, la direccion es: %s, el email es: %s, y el telefono es: %s' %(self.nombre, self.direccion, self.email, self.telefono)
+        return self.nombre
 
 
 class Articulo(models.Model):
